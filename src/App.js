@@ -10,6 +10,7 @@ function App() {
       <h1>Library Catalog</h1>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/books" component={BookList} />
       </Switch>
     </main>
   );
