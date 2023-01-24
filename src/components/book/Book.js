@@ -2,7 +2,15 @@ import Author from '../author/Author';
 import './Book.css';
 
 function Book({
-  book: { title, total_pages: totalPages, rating, isbn, published_date: publishedDate, authors },
+  book: {
+    book_id,
+    title,
+    total_pages: totalPages,
+    rating,
+    isbn,
+    published_date: publishedDate,
+    authors,
+  },
   showDetail = false,
 }) {
   return (
@@ -13,6 +21,7 @@ function Book({
           <Author key={author.author_id} author={author} />
         ))}
       </address>
+
       {showDetail && (
         <>
           <p>Rating: {rating}</p>
