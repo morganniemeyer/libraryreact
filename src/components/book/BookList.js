@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Book from '../../components/book/Book';
 import { useBooks } from '../../hooks/useBooks';
 
-function BookList(book) {
+function BookList() {
   const { error, loading, books } = useBooks();
   if (error)
     return (
